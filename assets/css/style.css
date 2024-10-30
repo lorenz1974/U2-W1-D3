@@ -27,6 +27,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 380px;
 
 }
 
@@ -57,6 +58,11 @@ h2 {
     margin: 3rem auto;
     font-weight: bold;
     font-size: 2.5rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
 }
 
 #sectionCards {
@@ -114,7 +120,6 @@ h2 {
     margin: 1rem 0;
 
 }
-
 
 .divCardTitleAndSubTitle {
     display: flex;
@@ -185,6 +190,7 @@ article img {
         width: 100%;
         justify-content: space-around;
         align-items: center;
+        max-width: none;
     }
 
     nav ul li {
@@ -207,17 +213,73 @@ article img {
 }
 
 @media screen and (min-width: 768px) {
-    #container {
+    body {
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        flex-direction: row;
     }
 
+    header {
+        width: 200px;
+    }
+
+
+
+    nav ul li {
+        font-size: .5rem;
+        width: 5rem;
+        height: 2rem;
+        font-size: 1.2em;
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    #liShop {
+        order: -2;
+        width: 5rem;
+        height: 2rem;
+        font-size: 1.2em;
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #sectionCards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .divCardContainer {
+        width: 175px;
+        height: 230px;
+    }
+
+    .cardImage {
+        height: 100px;
+    }
+
+    #sectionCards>div:nth-child(3) {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    #sectionCards div:nth-child(3) {
+        display: flex;
+    }
+}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .divCardContainer {
+        width: 235px;
+        height: 350px;
+    }
+
+    .cardImage {
+        height: 200px;
+    }
+}
 
 @media screen and (min-width: 1400px) {}
