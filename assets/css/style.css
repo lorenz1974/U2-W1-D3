@@ -1,0 +1,223 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #752305;
+}
+
+
+h2 {
+    color: #752305;
+    text-align: center;
+}
+
+h3 {
+    color: #752305;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FEF7E2;
+    padding: 1rem;
+    border-radius: 55px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #FFDF7F;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #752305;
+}
+
+main {
+    margin: 0 1rem;
+}
+
+h2 {
+    margin: 3rem auto;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#sectionCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#liShop {
+    order: -2;
+    width: 10rem;
+    height: 4.5rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+#liShop img {
+    margin-right: 1rem;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+#logoImage {
+    width: 7rem;
+    height: 5rem;
+}
+
+.divCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 300px;
+    height: 350px;
+    background-color: #FEF7E2;
+    border-radius: 55px;
+    margin-top: 2rem;
+}
+
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 55px 55px 0 0;
+    background-image: url("/assets/imgs/honey.jpg");
+    background-size: cover;
+}
+
+.divCardContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+
+
+.divCardTitleAndSubTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divCardTitleAndSubTitle h3 {
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.divCardTitleAndSubTitle p {
+    font-size: 0.8rem;
+}
+
+.divCardButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.divCardButton button {
+    border: none;
+    border-radius: 55px;
+    background-color: #FFDF7F;
+    width: 10rem;
+    height: 2rem;
+    font-weight: bold;
+    color: #752305;
+
+}
+
+article {
+    background-color: #FEF7E2;
+    border-radius: 55px;
+    line-height: 1.5rem;
+    padding: 1rem 1rem;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+article img {
+    margin: 1rem auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 360px) {
+    #liShop {
+        margin: 2rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .divCardContainer {
+        width: 250px;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul li {
+        font-size: .5rem;
+        width: 5rem;
+        height: 2rem;
+        font-size: .8em;
+        font-weight: bold;
+        padding: .5rem;
+        margin: .5rem 0;
+    }
+
+    #liShop {
+        order: 0;
+        margin: 0;
+        font-size: 1.2em;
+        width: 8rem;
+        height: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}
