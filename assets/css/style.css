@@ -212,8 +212,8 @@ article img {
         flex-direction: column;
         justify-content: start;
         align-items: start;
-
     }
+
 }
 
 @media screen and (min-width: 992px) {}
